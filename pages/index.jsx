@@ -1,19 +1,7 @@
 import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
 
 const Home = () => (
-	<div>
-		<nav>
-			<img src="/p2.svg" alt=""/>
-			<img src="/txt1.svg" alt=""/>
-			<ul>
-				<li>L'application</li>
-				<li>La randonnée</li>
-				<li>Contact</li>
-				<li className="download">Télécharger</li>
-			</ul>
-		</nav>
+	<>
 		<header>
 			<div className="headline">
 				<img src="/phone.png" alt=""/>
@@ -57,28 +45,6 @@ const Home = () => (
 			<img src="/google-play.svg" alt=""/>
 		</div>
 	</div>
-	<footer>
-		<div className="els black">
-			<div className="el">
-				Politique de confidencialité
-			</div>
-			<div className="el">
-				Conditions d'utilisations du service
-			</div>
-		</div>
-	</footer>
-
-
-			<style jsx global>{`
-				html, body {
-					padding: 0;
-					margin:0;
-				}
-				body {
-					margin-top: 70px;
-				}
-
-			`}</style>
 			<style jsx>{`
 				.black {
 					background: #3CB992;
@@ -91,38 +57,6 @@ const Home = () => (
 				.green {
 					display: inline-block;
 				}
-				nav {
-					position: fixed;
-					width: 96%;
-					padding: 2%;
-					top: 0;
-					background: white;
-					display: flex;
-					z-index: 1001;
-				}
-				nav img {
-					height: 60px;
-				}
-				nav ul {
-					margin: 0;
-					padding: 0;
-					width: 100%;
-					display: inline-flex;
-					justify-content: flex-end;
-					list-style: none;
-				}
-				nav ul li {
-					line-height: 2;
-					padding: 15px;
-				}
-				nav ul li.download {
-					background: #3CB992;
-					color: white;
-					border-radius: 10px;
-					padding: 7px 10px;
-					margin: 5px;
-				}
-
 				button {
 					border-radius: 10px;
 					padding: 7px 10px;
@@ -228,7 +162,7 @@ const Home = () => (
 				}
 
 			`}</style>
-	</div>
+	</>
 )
 
 export default Home
