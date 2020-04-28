@@ -9,9 +9,9 @@ const Home = () => (
 			<img src="/txt1.svg" alt=""/>
 			<ul>
 				<li>L'application</li>
-				<li>La randonnées</li>
+				<li>La randonnée</li>
 				<li>Contact</li>
-				<li className="download">Télecharger</li>
+				<li className="download">Télécharger</li>
 			</ul>
 		</nav>
 		<header>
@@ -21,8 +21,8 @@ const Home = () => (
 					<h1>Blablabla</h1>
 					<p>Loerm bitsum Loerm bitsum <br/>Loerm bitsumLoerm bitsum <br/>Loerm bitsumLoerm bitsum</p>
 					<div className="buttons">
-						<button className="shite" >Téléchrger</button>
-						<button className="outline">E savoir plus</button>
+						<button className="shite" >Télécharger</button>
+						<button className="outline">En savoir plus</button>
 					</div>
 				</div>
 			</div>
@@ -49,8 +49,8 @@ const Home = () => (
 	</div>
 	<div className="pokemon">
 		<div className="pk1">
-			<h2>N'attendes pas !</h2>
-			<p>Telechrger lapplicaiton</p>
+			<h2>N'attendez pas !</h2>
+			<p>Télécharger l'application</p>
 		</div>
 		<div>
 			<img src="/app-store.svg" alt=""/>
@@ -60,10 +60,10 @@ const Home = () => (
 	<footer>
 		<div className="els black">
 			<div className="el">
-				Politique de confidienclité
+				Politique de confidencialité
 			</div>
 			<div className="el">
-				Conditions dutilisasavionts du service
+				Conditions d'utilisations du service
 			</div>
 		</div>
 	</footer>
