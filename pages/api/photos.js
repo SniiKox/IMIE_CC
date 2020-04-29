@@ -42,7 +42,7 @@ export default async (req, res) => {
 			builder.pseudo = pseudo
 		}
 		if (location) {
-			builder.location =  parseInt(location)
+			builder.coinId =  parseInt(location)
 
 		}
 		res.end(JSON.stringify(await Photo.findAll(Object.keys(builder).length > 0 ? {where: builder} : undefined)))

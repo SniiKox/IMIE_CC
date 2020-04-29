@@ -1,15 +1,17 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default class FluxItem extends React.Component {
 
 
 	render() {
+		const location = this.props.locations.find((el) => el.id === this.props.item.coinId)
 		return (
 			<div>
 				<img src={this.props.item.path} alt=""/>
 				<p>
-					<span>By <a href="#!">{this.props.item.pseudo}</a></span>
-					<span>At <a href="#!">{this.props.item.location}</a></span>
+					<span>By <Link as={`/flux?pseudo=${this.props.item.pseudo}`} href={`/flux?pseudo=${this.props.item.pseudo}`}><a>{this.props.item.pseudo}</a></Link></span>
+					<span>At <Link as={`/flux?location=${this.props.item.coinId}`} href={`/flux?location=${this.props.item.coinId}`}><a>{location.name}</a></Link></span>
 				</p>
 				<style jsx>{`
 					div {
