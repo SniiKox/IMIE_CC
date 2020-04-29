@@ -8,7 +8,7 @@ export default class FluxItem extends React.Component {
 			<div>
 				<img src={this.props.item.path} alt=""/>
 				<p>
-		<span>By <a href="#!">{this.props.item.pseudo}</a></span>
+					<span>By <a href="#!">{this.props.item.pseudo}</a></span>
 					<span>At <a href="#!">{this.props.item.location}</a></span>
 				</p>
 				<style jsx>{`
