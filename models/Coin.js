@@ -1,10 +1,5 @@
 import Sequelize from 'sequelize'
 import { connexion } from '../libs/util'
-/*
-    name
-    coordx
-    coordy
-*/
 
 class Coin extends Sequelize.Model {}
 Coin.init({
